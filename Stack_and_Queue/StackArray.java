@@ -5,11 +5,10 @@ class StackArray {
     int top;
     int size;
 
-    // Constructor
-    StackArray(int size) {
+    StackArray(int size){
         this.size = size;
         stack = new int[size];
-        top = -1; // stack is empty
+        top = -1;
     }
 
     // Push element

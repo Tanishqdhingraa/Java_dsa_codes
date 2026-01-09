@@ -1,0 +1,5 @@
+⏱ Time & Space Complexity (For Notes)
+
+Time: O(n)
+
+Space: O(n)
