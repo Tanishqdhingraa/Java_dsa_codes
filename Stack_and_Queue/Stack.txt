@@ -1,0 +1,39 @@
+Time Complexity (Stack using Linked List)
+Push: O(1) — insert at head
+Pop: O(1) — delete from head
+Peek: O(1) — access head
+👉 All operations take constant time.
+
+
+
+💾 Space Complexity (Stack using Linked List)
+O(n) — for n nodes stored in stack
+Extra space for next pointer in each node
+🧠 One-Line Summary (Best for Notes)
+
+Stack using Linked List supports all operations in O(1) time with O(n) space due to dynamic node allocation.
+
+
+----------------------------------------------Arrays---------------------
+Time Complexity (Stack using Array)
+Push: O(1) — insert at top
+Pop: O(1) — remove from top
+Peek: O(1) — access top
+👉 All operations take constant time.
+
+
+
+💾 Space Complexity (Stack using Array)
+O(n) — fixed size array of n elements
+No extra pointer space required
+
+
+
+--------------------------------------------Summary------------------------------
+🧠 One-Line Summary (For Notes)
+Stack using Array performs all operations in O(1) time with O(n) fixed space, but may cause overflow due to fixed size.
+
+
+⚖️ One-Line Comparison (Very Useful)
+Array Stack: Fixed size, memory efficient
+Linked List Stack: Dynamic size, extra pointer space
