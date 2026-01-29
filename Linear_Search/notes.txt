@@ -1,0 +1,5 @@
+Timecomplexity 
+
+O(1) -> constant -> best case 
+O(N) -> Worst case n is a size of array 
+

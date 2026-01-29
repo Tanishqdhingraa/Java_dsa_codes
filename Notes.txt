@@ -1,0 +1,33 @@
+🔍 SEARCHING TECHNIQUES
+
+These are mandatory:
+Linear Search
+Binary Search
+Binary Search on Answer (search space technique)
+Two Pointer Search (on sorted arrays)
+Hashing based Search (using HashSet / HashMap)
+
+
+🔄 SORTING TECHNIQUES
+🧩 Basic (You must know by heart)
+Bubble Sort
+Selection Sort
+Insertion Sort
+
+
+Efficient (Interview standard)
+Merge Sort
+Quick Sort
+Heap Sort
+
+
+
+Specialized
+Counting Sort
+Radix Sort
+Bucket Sort
+
+
+Library Sort (Very Important)
+Arrays.sort()
+Collections.sort()
