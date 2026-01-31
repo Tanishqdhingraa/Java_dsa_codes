@@ -1,0 +1,2 @@
+Global variable can be shared and changed by anywhere 
+(Static int = 10)=>This is global variable

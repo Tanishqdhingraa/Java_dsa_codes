@@ -1,0 +1,6 @@
+Time complexity = Max no of calls in call stack
+
+-> Depends on maximum number of calls 
+Speed => For loop >> Recursion
+More space needed => Loop << Recursion 
+
