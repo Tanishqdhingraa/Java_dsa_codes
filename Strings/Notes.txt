@@ -1,0 +1,32 @@
+
+🟢 EASY LEVEL
+
+Valid Palindrome – LC 125 ✅
+Reverse String – LC 344
+First Unique Character – LC 387
+Valid Anagram – LC 242
+Implement strStr() – LC 28
+Length of Last Word – LC 58
+Roman to Integer – LC 13
+Longest Common Prefix – LC 14
+
+
+
+🟡 MEDIUM LEVEL
+
+Longest Substring Without Repeating Characters – LC 3
+Group Anagrams – LC 49
+Longest Palindromic Substring – LC 5
+String to Integer (atoi) – LC 8
+Zigzag Conversion – LC 6
+Multiply Strings – LC 43
+Decode String – LC 394
+Remove K Digits – LC 402
+
+
+🔴 INTERVIEW FAVORITES
+
+Minimum Window Substring – LC 76
+Find All Anagrams in a String – LC 438
+Valid Parentheses – LC 20 (Stack + String)
+Palindrome Partitioning – LC 131 (Backtracking + String)
