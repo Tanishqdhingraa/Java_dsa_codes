@@ -1,0 +1,43 @@
+ Linkedlist Operation
+| ------------------ | ---- |
+| Insert at Start    | O(1) |
+| Insert at End      | O(n) |
+| Insert at Position | O(n) |
+| Delete             | O(n) |
+| Search             | O(n) |
+| Reverse            | O(n) |
+| Display            | O(n) |
+
+---------------------------------------------------------------------------
+Questions to Do 
+
+🟢 Two Pointer (Fast & Slow)
+Detect Cycle (Floyd’s Algorithm)
+Find Middle of Linked List
+Find Start of Cycle
+
+
+🟢 Reversal Pattern
+Reverse Linked List
+Reverse Linked List II (between positions)
+Reverse in K Groups
+
+
+🟢 Merging Pattern
+Merge Two Sorted Lists
+Merge K Sorted Lists (Heap or Divide & Conquer)
+
+
+🟢 Math / Carry Pattern
+Add Two Numbers
+Add One to Linked List
+
+
+🟢 Deletion Pattern
+Remove Nth Node From End
+Delete Node (given only node)
+
+
+🟢 Intersection Pattern
+Intersection of Two Linked Lists
+---------------------------------------------------------------------------
