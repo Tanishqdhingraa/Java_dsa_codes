@@ -1,0 +1,60 @@
+
+🟢 BASIC STACK PATTERN
+1️⃣ Valid Parentheses
+LC 20
+Check if brackets are balanced.
+
+2️⃣ Min Stack
+LC 155
+Design stack that returns minimum in O(1).
+
+3️⃣ Implement Stack using Queues
+LC 225
+Stack logic using queue.
+------------------------------------------------------
+
+
+🟡 MONOTONIC STACK (VERY IMPORTANT)
+4️⃣ Next Greater Element I
+LC 496
+
+5️⃣ Next Greater Element II
+LC 503 (circular array)
+
+6️⃣ Daily Temperatures
+LC 739
+
+7️⃣ Stock Span Problem
+Classic (GFG/LeetCode variants)
+
+8️⃣ Largest Rectangle in Histogram
+LC 84 ⭐⭐⭐
+
+🔵 STRING + STACK
+9️⃣ Remove All Adjacent Duplicates in String
+LC 1047
+
+🔟 Decode String
+LC 394
+
+1️⃣1️⃣ Remove K Digits
+LC 402 
+------------------------------------------------------
+
+🟠 EXPRESSION & EVALUATION
+1️⃣2️⃣ Evaluate Reverse Polish Notation
+LC 150
+
+1️⃣3️⃣ Basic Calculator II
+LC 227
+
+
+------------------------------------------------------
+
+🔴 ADVANCED STACK PATTERN
+
+1️⃣4️⃣ Trapping Rain Water
+LC 42 (Stack + Two Pointer concept)
+
+1️⃣5️⃣ Sum of Subarray Minimums
+LC 907 ⭐⭐⭐ (Monotonic Stack)

@@ -1,0 +1,47 @@
+What is a Stack?
+
+A Stack is a linear data structure that follows:
+LIFO (Last In First Out)
+The last element inserted is the first one to be removed.
+
+Example:
+Stack of plates 🍽️ → You take the top plate first.
+------------------------------------------------------
+Basic Stack Operations
+
+Push(x) ->	Insert element on top
+Pop()	-> Remove top element
+Peek()/Top()-> View top element without removing
+isEmpty()	-> Check if stack is empty
+isFull() ->	(Array stack) Check overflow
+
+------------------------------------------------------
+How Stack is Implemented
+
+
+1️⃣ Using Array
+Uses a variable top
+Push → arr[++top] = x
+Pop → arr[top--]
+Fixed size → Overflow possible
+
+
+2️⃣ Using Linked List
+Insert/delete at head
+No overflow (until memory full)
+Extra memory for pointers
+
+
+3️⃣ Using Java Library
+Use Deque (ArrayDeque) — best practice
+Faster than old Stack class
+
+------------------------------------------------------
+Time Complexity
+Operation	Time
+
+Push	    O(1)
+Pop	        O(1)
+Peek	    O(1)
+Search	    O(n)
+------------------------------------------------------

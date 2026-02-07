@@ -1,0 +1,25 @@
+here Stack is Used (VERY IMPORTANT)
+
+Stacks are used in problems involving:
+🔹 Expression Handling
+Infix → Postfix
+Postfix Evaluation
+
+🔹 Parentheses Problems
+Valid Parentheses
+Balanced Brackets
+
+🔹 Recursion
+Function calls are stored in call stack
+
+🔹 Undo / Redo
+Text editors
+
+🔹 Backtracking
+Maze solving
+DFS traversal
+
+🔹 Monotonic Stack (Advanced Interviews)
+Next Greater Element
+Stock Span Problem
+Daily Temperatures
