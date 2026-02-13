@@ -1,3 +1,6 @@
+// BFS  → Level Order
+// DFS  → Preorder / Inorder / Postorder
+
 class Node {
     int val;
     Node left;

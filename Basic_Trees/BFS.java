@@ -2,13 +2,10 @@
 // q.offer(root);
 // TreeNode curr = q.poll();
 // if(curr.left/right != null) q.offer(...)
-
-
-
 import java.util.*;
 
 // Binary Tree BFS (Level Order Traversal)
-class BinaryTreeBFS {
+class BFS {
 
     // Tree Node definition
     static class TreeNode {
@@ -17,7 +14,7 @@ class BinaryTreeBFS {
 
         TreeNode(int val) {
             this.val = val;
-            left = right = null;
+            // left = right = null;
         }
     }
 
@@ -55,12 +52,11 @@ class BinaryTreeBFS {
     public static void main(String[] args) {
 
         /*
-         * 1
-         * / \
-         * 2 3
-         * / \ \
-         * 4 5 6
-         */
+         *   1
+         *  / \
+         *  2  3
+         * / \  \
+         * 4 5   6 */
 
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(2);

@@ -7,8 +7,8 @@ class Node {
         left = right = null;
     }
 }
-
-class BinaryTreeLinkedList {
+ 
+class All {
 
     Node root;
 
@@ -37,7 +37,7 @@ class BinaryTreeLinkedList {
     }
 
     public static void main(String[] args) {
-        BinaryTreeLinkedList tree = new BinaryTreeLinkedList();
+        All tree = new All();
 
         tree.root = new Node(1);
         tree.root.left = new Node(2);
