@@ -8,12 +8,12 @@ class Node {
     }
 }
 
-// Min value in Binary Tree
+//?  Min value in Binary Tree
 public class H {
 
     private static int Minvalue(Node root) {
         if (root == null)
-            return Integer.MAX_VALUE; // FOCUS HERE
+            return Integer.MAX_VALUE;// ! IMPORTANT STATEMENT
 
         int leftmin = Minvalue(root.left);
         int rightmin = Minvalue(root.right);

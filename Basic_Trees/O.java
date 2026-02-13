@@ -12,9 +12,9 @@ class Node {
 
 public class O {
 
-    // Inorder Traversal using Stack (Iterative)
-    // Order: Left → Root → Right
-    // Go left until null, then process, then go right
+    //? Inorder Traversal using Stack (Iterative)
+    //? Order: Left → Root → Right
+    //? Go left until null, then process, then go right
 
     private static void inOrderUsingStack(Node root) {
 
@@ -23,17 +23,17 @@ public class O {
 
         while (current != null || !stack.isEmpty()) {
 
-            // Go to extreme left
+            // ! IMPORTANT STATEMENT
             while (current != null) {
                 stack.push(current);
                 current = current.left;
             }
 
-            // Process node
+            // ! IMPORTANT STATEMENT
             current = stack.pop();
             System.out.print(current.val + " ");
 
-            // Move to right subtree
+            // ! IMPORTANT STATEMENT
             current = current.right;
         }
     }

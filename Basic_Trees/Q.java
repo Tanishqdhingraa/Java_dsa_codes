@@ -32,7 +32,7 @@ public class Q {
                 current = current.left;
             } else {
                 Node peekNode = stack.peek();
-
+                // ! IMPORTANT STATEMENT
                 // If right child exists and not processed yet
                 if (peekNode.right != null && lastVisited != peekNode.right) {
                     current = peekNode.right;

@@ -1,5 +1,5 @@
-// BFS  → Level Order
-// DFS  → Preorder / Inorder / Postorder
+//? BFS  → Level Order
+//? DFS  → Preorder / Inorder / Postorder
 
 class Node {
     int val;
@@ -11,7 +11,7 @@ class Node {
     }
 }
 
-//just a implemantation of tree 
+//? just a implemantation of tree 
 public class A {
     public static void main(String[] args) {
         Node a = new Node(3);

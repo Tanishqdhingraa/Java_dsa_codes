@@ -1,7 +1,7 @@
-// Preorder Traversal using Stack (Iterative)
-// Order: Root → Left → Right
-// Use Stack (LIFO)
-// Push Right first, then Left (so Left is processed first)
+//? Preorder Traversal using Stack (Iterative)
+//? Order: Root → Left → Right
+//? Use Stack (LIFO)
+//? Push Right first, then Left (so Left is processed first)
 
 import java.util.Stack;
 
@@ -26,11 +26,11 @@ private static void PreOrderUsingStack(Node root) {
     stack.push(root);
 
     while (!stack.isEmpty()) {
-
+        // ! IMPORTANT STATEMENT
         Node current = stack.pop();
         System.out.print(current.val + " ");
 
-        // Push right first (so left gets processed first)
+        // ! IMPORTANT STATEMENT
         if (current.right != null) {
             stack.push(current.right);
         }

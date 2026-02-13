@@ -8,12 +8,12 @@ class Node {
     }
 }
 
-// Product of nodes of Binary Tree
+//? Product of nodes of Binary Tree
 public class F {
 
     private static int Product(Node root) {
         if (root == null)
-            return 1; // FOCUS HERE
+            return 1; // ! IMPORTANT STATEMENT
 
         int leftProduct = Product(root.left);
         int rightProduct = Product(root.right);

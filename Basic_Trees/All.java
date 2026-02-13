@@ -12,7 +12,7 @@ class All {
 
     Node root;
 
-    // Preorder: Root → Left → Right
+    //? Preorder: Root → Left → Right
     void preorder(Node node) {
         if (node == null) return;
         System.out.print(node.data + " ");
@@ -20,7 +20,7 @@ class All {
         preorder(node.right);
     }
 
-    // Inorder: Left → Root → Right
+    //? Inorder: Left → Root → Right
     void inorder(Node node) {
         if (node == null) return;
         inorder(node.left);
@@ -28,7 +28,7 @@ class All {
         inorder(node.right);
     }
 
-    // Postorder: Left → Right → Root
+    //? Postorder: Left → Right → Root
     void postorder(Node node) {
         if (node == null) return;
         postorder(node.left);
