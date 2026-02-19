@@ -1,0 +1,103 @@
+====================================================
+        COMPARISON OF BASIC SORTING ALGORITHMS
+====================================================
+
+1) BUBBLE SORT
+------------------------------------
+Idea:
+    Repeatedly compare adjacent elements
+    Swap if they are in wrong order
+
+Time Complexity:
+    Best Case:    O(n)      (with optimization)
+    Average Case: O(n^2)
+    Worst Case:   O(n^2)
+
+Space Complexity:
+    O(1)
+
+Stable:
+    Yes
+
+Adaptive:
+    Yes (if optimized with early break)
+
+Swaps:
+    Many swaps
+
+Best For:
+    Small datasets
+    Educational purposes
+
+
+2) SELECTION SORT
+------------------------------------
+Idea:
+    Select minimum element
+    Place it at correct position
+
+Time Complexity:
+    Best Case:    O(n^2)
+    Average Case: O(n^2)
+    Worst Case:   O(n^2)
+
+Space Complexity:
+    O(1)
+
+Stable:
+    No
+
+Adaptive:
+    No
+
+Swaps:
+    Minimum swaps (at most n swaps)
+
+Best For:
+    When swap cost is high
+
+
+3) INSERTION SORT
+------------------------------------
+Idea:
+    Take one element
+    Insert it into correct position
+    in sorted left portion
+
+Time Complexity:
+    Best Case:    O(n)
+    Average Case: O(n^2)
+    Worst Case:   O(n^2)
+
+Space Complexity:
+    O(1)
+
+Stable:
+    Yes
+
+Adaptive:
+    Yes
+
+Swaps/Shifts:
+    Fewer swaps (mostly shifting)
+
+Best For:
+    Nearly sorted arrays
+    Small datasets
+    Used inside hybrid sorts
+
+
+====================================================
+INTERVIEW QUICK SUMMARY
+====================================================
+
+Bubble Sort:
+    Simple but inefficient.
+
+Selection Sort:
+    Always O(n^2), but minimum swaps.
+
+Insertion Sort:
+    Best among three.
+    Efficient for small or nearly sorted arrays.
+====================================================
