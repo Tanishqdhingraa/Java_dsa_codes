@@ -1,0 +1,79 @@
+| Operation             | Time Complexity |
+| --------------------- | --------------- |
+| Insert                | O(log n)        |
+| Delete Root           | O(log n)        |
+| Peek                  | O(1)            |
+| Build Heap            | O(n)            |
+| Heapify               | O(log n)        |
+| Search                | O(n)            |
+| Decrease/Increase Key | O(log n)        |
+
+| Case    | Time Complexity |
+| ------- | --------------- |
+| Best    | O(n log n)      |
+| Average | O(n log n)      |
+| Worst   | O(n log n)      |
+| Space   | O(1) (in-place) |
+
+---------------------------------------------------------------
+What is Min heap ? 
+->Parent Node << Child Node 
+
+##Deletion in Min heap?
+Time Complexity: O(log n) 
+🔹 Steps:
+1->  Store root (this is the minimum).
+2->   Replace root with last element of heap.
+3->  Remove last element (reduce heap size).
+4->  Heapify Down (Bubble Down):
+            Compare with left & right child.
+            Swap with smaller child.
+            Repeat until heap property is restored.
+
+
+
+##Insertion in Min Heap
+Time Complexity: O(log n)
+🔹 Steps:
+1-> Insert element at the end of heap (last index).
+2->Heapify Up (Bubble Up):
+    Compare with parent.
+    If parent > current → swap.
+    Move upward.
+    Repeat until:
+            Parent ≤ current
+            OR node becomes root.
+
+
+
+Removal (Delete Min) in Min Heap
+Time Complexity: O(log n)
+
+🔹 Steps:
+1 → Store root element (this is minimum).
+2 → Replace root with last element of heap.
+3 → Remove last element (reduce heap size).
+4 → Heapify Down (Bubble Down):
+  Compare with left and right child.
+  Swap with smaller child.
+  Move downward.
+  Repeat until:
+    Children ≥ current
+    OR node becomes leaf
+
+---------------------------------------------------------------
+Where to use Heap ?
+->Where we asked Kth (smallest , largest , closest, most frequenvy)
+->Continous sorting 
+---------------------------------------------------------------
+Whenever we look smallest ->Use maxheap 
+Whenever we look Largest ->Use Minheap 
+
+
+---------------------------------------------------------------
+
+
+| Problem      | Heap Used | What We Remove   | What Remains in Heap | Root Represents |
+| ------------ | --------- | ---------------- | -------------------- | --------------- |
+| Kth Largest  | Min Heap  | Smaller elements | k largest elements   | kth largest     |
+| Kth Smallest | Max Heap  | Larger elements  | k smallest elements  | kth smallest    |

@@ -1,0 +1,46 @@
+===============================================================
+When Should You Think of Heap?
+
+When Question Says K Largest / K Smallest? 
+When You Need Top / Best / Priority?
+When Data Is Streaming (Continuous Input)? 
+When You Need Efficient Insert + Delete? 
+===============================================================
+Example keywords:
+
+“Find k largest elements”
+“Kth smallest element”
+“Top kHighest priority"
+
+Minimum cost
+Maximum profit
+Smallest element repeatedly
+
+Running median
+Continuously arriving numbers
+
+Insert → O(log n)
+
+Remove min/max → O(log n)
+===============================================================
+One line rule:
+
+When you need only K best elements (not full sorting) → Think Heap.
+When repeatedly extracting min/max → Heap.
+When data keeps coming and you must maintain order dynamically → Heap.
+If sorting every time is expensive → Use Heap.
+
+
+===============================================================
+Important Interview Trick
+
+If n is large and k is small:
+Sorting → O(n log n)
+Heap → O(n log k) ✅ better
+
+===============================================================
+K element problem → Heap
+Repeated min/max → Heap
+Top frequent → Heap
+Streaming data → Heap
+Priority based → Heap
