@@ -1,0 +1,109 @@
+SLIDING WINDOW TECHNIQUE — COMPLETE SHORT NOTES
+
+================================================================================
+WHEN to Use Sliding Window?
+
+Use sliding window when:
+
+Problem involves subarray / substring  
+
+Asked for:
+        Maximum / Minimum   
+        Longest / Shortest
+        Count of something
+
+Constraint is continuous
+
+Brute force is O(n²) and we need O(n)
+
+================================================================================
+Keywords to spot:
+
+subarray
+substring
+contiguous
+at most k
+exactly k
+longest
+maximum sum
+minimum length
+
+================================================================================
+WHY Use Sliding Window?
+
+Because:
+Instead of checking all subarrays (O(n²)),
+we maintain a moving window → O(n).
+
+We reuse previous work instead of recalculating sum/count.
+
+================================================================================
+TYPES of Sliding Window
+
+A) Fixed Size Window
+
+Window size = k (constant)
+
+Example:
+Maximum sum of subarray of size k
+Pick k cards problem
+
+Pattern:
+1. Compute first window
+2. Slide:
+   remove left element
+   add right element
+3. Update answer
+
+
+
+B) Variable Size Window
+
+Window size changes dynamically.
+
+Used when:
+    Longest substring without repeating characters
+    At most k distinct characters
+    Minimum size subarray sum
+
+Pattern:
+Expand right pointer
+While condition breaks:
+    shrink from left
+Update answer
+
+
+================================================================================
+HOW to Recognize Sliding Window?
+
+Ask yourself:
+
+✔ Is it about contiguous elements?
+✔ Can I avoid nested loops?
+✔ Can I move left and right pointers instead?
+✔ Is there a condition that becomes invalid and needs shrinking?
+
+If YES → Sliding Window.
+
+================================================================================
+HOW to Think Step-by-Step?
+
+Step 1:
+Is window size fixed or variable?
+
+Step 2:
+What makes window valid?
+
+Step 3:
+When should we shrink?
+
+Step 4:
+Where to update answer?
+
+================================================================================
+One Line Memory Trick
+
+Fixed → Slide and update
+Variable → Expand, shrink, update
+
+================================================================================
