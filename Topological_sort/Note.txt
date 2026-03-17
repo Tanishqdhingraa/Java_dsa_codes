@@ -1,0 +1,170 @@
+==================== TOPOLOGICAL SORT NOTES ====================
+
+------------------------------------------------------------
+WHAT IS TOPOLOGICAL SORT?
+------------------------------------------------------------
+
+👉 Linear ordering of vertices such that:
+For every directed edge u → v,
+u appears before v.
+
+👉 Only applicable on:
+DAG (Directed Acyclic Graph)
+
+If cycle exists → Topological sort NOT possible.
+
+================================================================
+1️⃣ TOPOLOGICAL SORT USING DFS
+================================================================
+
+👉 Use When:
+- Graph is DAG
+- Need ordering
+- Useful in: Course Schedule, Build Systems
+
+👉 Time Complexity:
+O(V + E)
+
+👉 Core Idea:
+- Do DFS
+- Push node to stack AFTER visiting all neighbours
+- Reverse of finishing time gives topo order
+
+👉 Steps:
+1. Create visited[]
+2. For each unvisited node:
+      DFS(node)
+3. In DFS:
+      Visit neighbours
+      Push node into stack AFTER recursion
+4. Reverse stack = Answer
+
+👉 Template Code:
+
+List<Integer> topoSortDFS(int V, List<List<Integer>> adj) {
+
+    boolean[] visited = new boolean[V];
+    Stack<Integer> stack = new Stack<>();
+
+    for(int i = 0; i < V; i++) {
+        if(!visited[i])
+            dfs(i, adj, visited, stack);
+    }
+
+    List<Integer> result = new ArrayList<>();
+
+    while(!stack.isEmpty())
+        result.add(stack.pop());
+
+    return result;
+}
+
+void dfs(int node, List<List<Integer>> adj,
+         boolean[] visited, Stack<Integer> stack) {
+
+    visited[node] = true;
+
+    for(int nei : adj.get(node)) {
+        if(!visited[nei])
+            dfs(nei, adj, visited, stack);
+    }
+
+    stack.push(node);   // Important
+}
+
+================================================================
+2️⃣ TOPOLOGICAL SORT USING BFS (KAHN'S ALGORITHM)
+================================================================
+
+👉 Use When:
+- Need topo sort
+- Also want cycle detection
+- Based on indegree
+
+👉 Time Complexity:
+O(V + E)
+
+👉 Core Idea:
+- Nodes with indegree 0 can come first
+- Remove them and reduce indegree of neighbours
+- Repeat
+
+👉 Steps:
+1. Compute indegree of all nodes
+2. Add all nodes with indegree 0 to queue
+3. While queue not empty:
+      Remove node
+      Add to answer
+      Reduce indegree of neighbours
+      If neighbour indegree becomes 0 → add to queue
+4. If result size < V → cycle exists
+
+👉 Template Code:
+
+List<Integer> topoSortBFS(int V, List<List<Integer>> adj) {
+
+    int[] indegree = new int[V];
+
+    // Step 1: Compute indegree
+    for(int i = 0; i < V; i++) {
+        for(int nei : adj.get(i))
+            indegree[nei]++;
+    }
+
+    Queue<Integer> q = new LinkedList<>();
+
+    // Step 2: Add 0 indegree nodes
+    for(int i = 0; i < V; i++) {
+        if(indegree[i] == 0)
+            q.offer(i);
+    }
+
+    List<Integer> result = new ArrayList<>();
+
+    // Step 3: Process queue
+    while(!q.isEmpty()) {
+
+        int node = q.poll();
+        result.add(node);
+
+        for(int nei : adj.get(node)) {
+            indegree[nei]--;
+
+            if(indegree[nei] == 0)
+                q.offer(nei);
+        }
+    }
+
+    // Step 4: Cycle check
+    if(result.size() != V) {
+        System.out.println("Cycle detected");
+    }
+
+    return result;
+}
+
+================================================================
+🔥 DFS vs KAHN'S (BFS) QUICK DIFFERENCE
+================================================================
+
+DFS Topo:
+- Uses stack
+- Based on finishing time
+- Harder to detect cycle directly
+
+Kahn's Algo:
+- Uses indegree + queue
+- Easy cycle detection
+- More intuitive
+
+================================================================
+WHEN TO USE WHAT?
+================================================================
+
+If question says:
+- "Return topological order" → Either works
+- "Detect cycle in directed graph" → Kahn preferred
+- "Course Schedule problem" → Kahn preferred
+- "Print ordering using DFS" → DFS method
+
+================================================================
