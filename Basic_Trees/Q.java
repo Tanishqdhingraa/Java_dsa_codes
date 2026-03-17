@@ -33,11 +33,11 @@ public class Q {
             } else {
                 Node peekNode = stack.peek();
                 // ! IMPORTANT STATEMENT
-                // If right child exists and not processed yet
+                //! If right child exists and not processed yet
                 if (peekNode.right != null && lastVisited != peekNode.right) {
                     current = peekNode.right;
                 } else {
-                    // Both children processed → print root
+                    //! Both children processed → print root
                     System.out.print(peekNode.val + " ");
                     lastVisited = stack.pop();
                 }
