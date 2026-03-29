@@ -1,0 +1,6 @@
+// | Condition     | Meaning                    |
+// | ------------- | -------------------------- |
+// | `row < 0`     | Went above top boundary    |
+// | `row >= rows` | Went below bottom boundary |
+// | `col < 0`     | Went left of matrix        |
+ | `col >= cols` | Went right of matrix       |

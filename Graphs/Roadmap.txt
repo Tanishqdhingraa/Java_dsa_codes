@@ -1,0 +1,116 @@
+==============================
+14 CORE GRAPH DSA PATTERNS
+==============================
+
+1. Graph Traversal
+   - DFS (Depth First Search).✅
+   - BFS (Breadth First Search)✅
+
+2. Connected Components
+   - Count components using DFS/BFS✅
+
+3. Cycle Detection
+   - Undirected Graph (DFS + Parent)✅
+   - Directed Graph (DFS + Recursion Stack)✅
+   - Kahn’s Algorithm (BFS)✅
+
+4. Topological Sort
+   - DFS Based✅
+   - Kahn’s Algorithm (BFS)✅
+
+5. Shortest Path Algorithms
+   - BFS (Unweighted Graph)✅
+   - Dijkstra Algorithm✅
+   - Bellman-Ford Algorithm✅
+   - Floyd Warshall Algorithm✅
+
+6. Minimum Spanning Tree (MST)
+   - Prim’s Algorithm✅
+   - Kruskal’s Algorithm
+
+7. Disjoint Set (Union-Find)
+   - Path Compression✅
+   - Union by Rank✅
+
+8. Bipartite Graph
+   - BFS Coloring✅
+   - DFS Coloring✅
+
+9. Strongly Connected Components (SCC)
+   - Kosaraju Algorithm
+   - Tarjan Algorithm
+
+10. Bridges and Articulation Points
+    - Tarjan Algorithm
+
+11. Grid Based Graph Problems
+    - Flood Fill✅
+    - Multi-source BFS✅
+    - 4-direction / 8-direction movement✅
+
+12. Priority Queue Based Graph
+    - Dijkstra variations✅
+    - Network Delay Time✅
+
+13. Backtracking in Graph
+    - All Paths from Source to Target✅
+    - Hamiltonian Path
+
+14. Graph Coloring
+    - M-Coloring Problem
+
+
+====================================
+30 IMPORTANT GRAPH INTERVIEW QUESTIONS
+====================================
+
+1. Number of Provinces✅
+2. Number of Islands✅
+3. Flood Fill✅
+4. Rotting Oranges✅
+5. Course Schedule (Cycle Detection in Directed Graph)✅
+6. Course Schedule II (Topological Sort)✅
+7. Detect Cycle in Undirected Graph✅
+8. Detect Cycle in Directed Graph✅
+9. Is Graph Bipartite?✅
+10. Topological Sort (Generic)✅
+11. Shortest Path in Binary Matrix✅
+12. Word Ladder
+13. Network Delay Time✅
+14. Dijkstra Shortest Path✅
+15. Bellman-Ford Implementation✅
+16. Floyd Warshall Implementation✅
+17. Minimum Spanning Tree (Prim)✅
+18. Minimum Spanning Tree (Kruskal)
+19. Accounts Merge (Union-Find)
+20. Redundant Connection
+21. Strongly Connected Components
+22. Bridges in Graph
+23. Articulation Points
+24. All Paths From Source to Target
+25. Clone Graph
+26. Reconstruct Itinerary
+27. Cheapest Flights Within K Stops✅
+28. Knight Shortest Path
+29. Surrounded Regions
+30. Alien Dictionary (Topological Sort Variant)
+
+
+====================================
+SUGGESTED LEARNING ORDER
+====================================
+
+Step 1: DFS + BFS ✅
+Step 2: Connected Components + Islands✅
+Step 3: Cycle Detection (Undirected → Directed)✅
+Step 4: Topological Sort✅
+Step 5: Bipartite Graph✅
+Step 6: Shortest Path (BFS → Dijkstra → Bellman-Ford)✅
+Step 7: MST (Prim + Kruskal)
+Step 8: Union-Find✅
+Step 9: SCC + Bridges
+Step 10: Advanced Graph + Hard Problems
+
+====================================
+Master these → You can solve 90% of Graph problems.
+====================================
