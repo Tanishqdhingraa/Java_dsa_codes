@@ -1,6 +1,6 @@
 package Basic_sorting;
 
-import java.lang.reflect.Array;
+// import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class example {
@@ -31,6 +31,7 @@ public class example {
             }
         }
     }
+    
     static void Selectionsort(int[] arr){
         for(int i = 0 ; i < arr.length-1; i++){
             int minIndex = i;
