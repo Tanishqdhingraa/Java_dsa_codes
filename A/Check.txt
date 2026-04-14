@@ -1,0 +1,5 @@
+Positive numbers only ->Sliding Window
+
+
+Contains negatives -> Prefix Sum + HashMap
+->Check Template1.txt

@@ -1,0 +1,37 @@
+package A;
+
+import java.util.HashMap;
+
+public class Template1 {
+    // TEMPLATE: Subarray problems (sum = k, longest/shortest, count)
+
+HashMap<Integer, Integer> map = new HashMap<>();
+
+int sum = 0;
+int ans = 0;
+
+// IMPORTANT: for cases where subarray starts from index 0
+map.put(0, -1);
+
+for(int i = 0; i < arr.length; i++){
+    
+    sum += arr[i]; // prefix sum
+    
+    // 🔥 CORE CHECK
+    if(map.containsKey(sum - k)){
+        int len = i - map.get(sum - k);  // length of subarray
+        
+        // 👉 Depending on problem:
+        ans = Math.max(ans, len); // for longest
+        // ans = Math.min(ans, len); // for shortest
+        // ans++; // for count (different variant)
+    }
+    
+    // Store only first occurrence (important for longest)
+    if(!map.containsKey(sum)){
+        map.put(sum, i);
+    }
+}
+
+return ans;
+}

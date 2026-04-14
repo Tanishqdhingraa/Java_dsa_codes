@@ -1,0 +1,8 @@
+Two Pointers 
+Siding window and thier types 
+Modified Binary search 
+HashMap and Hashset 
+Prefix Sum / Monotonic stack 
+Bfs/Dfs 
+Memoziation
+Max/Min_Heap 
