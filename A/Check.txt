@@ -1,5 +1,13 @@
 Positive numbers only ->Sliding Window
+------------------------------------------------------
 
 
-Contains negatives -> Prefix Sum + HashMap
+Pattern Recognition Tip
+Whenever you see:
+Subarray sum
+Need O(n)
+Array has negative numbers (so sliding window fails)
+Think:
+Prefix Sum + HashMap/HashSet
 ->Check Template1.txt
+------------------------------------------------------
