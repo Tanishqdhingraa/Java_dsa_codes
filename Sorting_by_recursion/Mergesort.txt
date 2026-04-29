@@ -1,0 +1,50 @@
+/*
+=========================================================
+                    MERGE SORT NOTES
+=========================================================
+
+1) Idea:
+   - Divide and Conquer algorithm.
+   - Divide array into two halves.
+   - Recursively sort both halves.
+   - Merge the two sorted halves.
+
+2) Steps:
+   1. Find middle index.
+   2. Recursively call mergeSort on:
+        left half  (low to mid)
+        right half (mid+1 to high)
+   3. Merge the two sorted halves
+      into a temporary array.
+
+3) Time Complexity:
+   - Best Case:    O(n log n)
+   - Average Case: O(n log n)
+   - Worst Case:   O(n log n)
+   (Same in all cases)
+
+4) Space Complexity:
+   - O(n) extra space (temporary array)
+   - Not in-place
+
+5) Stable?
+   - Yes (preserves order of equal elements)
+
+6) Why Merge Sort is Consistent?
+   - Always divides array equally.
+   - No worst-case degradation like QuickSort.
+
+7) Important Interview Points:
+   - Good for Linked Lists.
+   - Used in external sorting (large data).
+   - Stable sorting algorithm.
+   - Predictable performance.
+   - Used inside Java & Python sorting (TimSort uses merge logic).
+
+=========================================================
+INTERVIEW ONE-LINER:
+Merge Sort is a stable divide-and-conquer sorting 
+algorithm that recursively divides the array and 
+merges sorted halves in O(n log n) time.
+=========================================================
+*/

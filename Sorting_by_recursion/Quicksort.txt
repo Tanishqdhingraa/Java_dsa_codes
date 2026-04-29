@@ -1,0 +1,55 @@
+/*
+=========================================================
+                    QUICK SORT NOTES
+=========================================================
+
+1) Idea:
+   - Divide and Conquer algorithm.
+   - Pick a pivot element.
+   - Place pivot at its correct sorted position.
+   - Elements smaller than pivot → left side.
+   - Elements greater than pivot → right side.
+   - Recursively sort left and right subarrays.
+
+2) Steps:
+   1. Choose Pivot (first, last, random, median).
+   2. Partition array around pivot.
+   3. Recursively apply QuickSort on:
+        left subarray  (low to pi-1)
+        right subarray (pi+1 to high)
+
+3) Time Complexity:
+   - Best Case:    O(n log n)
+   - Average Case: O(n log n)
+   - Worst Case:   O(n^2)
+       (Occurs when array is already sorted
+        and pivot choice is poor)
+
+4) Space Complexity:
+   - O(log n) → recursion stack (average)
+   - O(n) → worst case recursion depth
+
+5) Stable?
+   - No (default implementation is unstable)
+
+6) In-Place?
+   - Yes (does not use extra array)
+
+7) Why QuickSort is Fast?
+   - Very good cache performance
+   - Constant factors are small
+   - Often faster than Merge Sort in practice
+
+8) Important Interview Points:
+   - Worst case occurs with bad pivot selection
+   - Random pivot reduces worst-case probability
+   - Tail recursion optimization possible
+   - Used in many real-world libraries internally
+
+=========================================================
+INTERVIEW ONE-LINER:
+QuickSort is a divide-and-conquer, in-place sorting 
+algorithm that partitions the array around a pivot 
+and recursively sorts the subarrays.
+=========================================================
+*/
