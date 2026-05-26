@@ -1,0 +1,69 @@
+=========================================================
+     REQUIREMENTS TO CONSTRUCT A UNIQUE BINARY TREE
+=========================================================
+
+1) You need TWO traversals to construct a unique tree.
+
+2) One of them MUST be:
+      - Inorder traversal
+
+3) Valid Combinations that form a Unique Tree:
+
+   ✔ Inorder + Preorder  → Unique Tree
+   ✔ Inorder + Postorder → Unique Tree
+
+4) Invalid Combinations (NOT Unique):
+
+   ✘ Preorder + Postorder (Not unique)
+   ✘ Inorder alone
+   ✘ Preorder alone
+   ✘ Postorder alone
+
+---------------------------------------------------------
+
+WHY IS INORDER IMPORTANT?
+
+Inorder gives:
+    Left Subtree | Root | Right Subtree
+
+It tells us:
+    - What belongs to left
+    - What belongs to right
+
+Preorder tells:
+    Root | Left | Right
+
+Postorder tells:
+    Left | Right | Root
+
+So when we combine:
+    - Inorder gives structure
+    - Pre/Post gives root order
+
+---------------------------------------------------------
+
+SPECIAL CASE:
+
+If tree is a FULL BINARY TREE
+(every node has 0 or 2 children)
+
+Then:
+    Preorder + Postorder → Unique Tree
+
+Otherwise:
+    Not unique.
+
+---------------------------------------------------------
+
+TIME COMPLEXITY:
+    O(n) to build using HashMap for inorder index lookup.
+
+---------------------------------------------------------
+
+INTERVIEW ONE-LINER:
+
+A unique binary tree can be constructed only when
+Inorder traversal is combined with either Preorder
+or Postorder traversal.
+
+=========================================================
