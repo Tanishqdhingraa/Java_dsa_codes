@@ -1,0 +1,164 @@
+RECURSION + BACKTRACKING ROADMAP (ZERO → HERO)
+
+--------------------------------------------------
+PHASE 1: RECURSION BASICS (FOUNDATION)
+--------------------------------------------------
+Theory:
+- Recursion = function calling itself ✅
+- Understand call stack✅
+- Base case (stopping condition)✅
+- Recursive case (reducing problem)✅
+
+Concepts:
+- Linear recursion✅
+- Parameterized recursion
+- Functional recursion (return values)✅
+
+Practice:
+- Factorial✅
+- Print 1 to N✅
+- Fibonacci (LC 509)✅
+- Reverse String (LC 344)✅
+
+Goal:
+- Understand how recursion calls stack and unwind ✅
+
+
+--------------------------------------------------
+PHASE 2: RECURSION PATTERNS
+--------------------------------------------------
+Theory:
+1. Pick / Not Pick (decision tree)
+2. Loop inside recursion
+3. Subsequence generation
+
+Practice:
+- Subsets (LC 78)
+- Subsets II (LC 90)
+- Combination Sum (LC 39)
+- Combination Sum II (LC 40)
+
+Goal:
+- Visualize recursion tree
+
+
+--------------------------------------------------
+PHASE 3: BACKTRACKING BASICS
+--------------------------------------------------
+Theory:
+Backtracking = Try → Explore → Undo
+
+Steps:
+1. Choose
+2. Explore
+3. Un-choose (Backtrack)
+
+Golden Rule:
+- Always undo changes after recursion
+
+Practice:
+- Permutations (LC 46)
+- Permutations II (LC 47)
+- Palindrome Partitioning (LC 131)
+
+Goal:
+- Master state change and revert
+
+
+--------------------------------------------------
+PHASE 4: ADVANCED BACKTRACKING
+--------------------------------------------------
+Theory:
+- Constraints handling
+- Pruning (cut unnecessary branches)
+- Avoid duplicates
+
+Practice:
+- N-Queens (LC 51)
+- Sudoku Solver (LC 37)
+- Word Search (LC 79)
+
+Goal:
+- Think in terms of search space + pruning
+
+
+--------------------------------------------------
+PHASE 5: MASTER PATTERNS
+--------------------------------------------------
+Patterns:
+1. Subsets / Power set
+2. Permutations
+3. Combinations
+4. Partitioning
+5. Grid problems
+6. Constraint satisfaction
+
+Practice:
+- Letter Combinations (LC 17)
+- Restore IP Addresses (LC 93)
+- Generate Parentheses (LC 22)
+
+
+--------------------------------------------------
+PHASE 6: OPTIMIZATION + INTERVIEW LEVEL
+--------------------------------------------------
+Theory:
+- Pruning early
+- Using sets/maps to avoid duplicates
+- Bitmasking (advanced)
+- Memoization (convert recursion → DP)
+
+Practice:
+- Word Break II (LC 140)
+- Expression Add Operators (LC 282)
+
+
+--------------------------------------------------
+HOW TO THINK (MOST IMPORTANT)
+--------------------------------------------------
+Steps:
+1. Break problem into smaller parts
+2. Define base case
+3. Identify choices at each step
+4. Draw recursion tree
+5. Apply backtracking if needed
+
+
+--------------------------------------------------
+GENERIC BACKTRACKING TEMPLATE (JAVA)
+--------------------------------------------------
+void backtrack(List<List<Integer>> res, List<Integer> temp, int[] nums, int start){
+    res.add(new ArrayList<>(temp));
+
+    for(int i = start; i < nums.length; i++){
+        // choose
+        temp.add(nums[i]);
+
+        // explore
+        backtrack(res, temp, nums, i + 1);
+
+        // un-choose (backtrack)
+        temp.remove(temp.size() - 1);
+    }
+}
+
+
+--------------------------------------------------
+TIMELINE
+--------------------------------------------------
+Phase 1–2 → 3 days
+Phase 3 → 3–4 days
+Phase 4 → 4–5 days
+Phase 5–6 → 1 week
+
+Total: ~2 weeks
+
+
+--------------------------------------------------
+FINAL ADVICE
+--------------------------------------------------
+- Do NOT memorize → visualize recursion tree
+- Dry run every problem
+- Use pen & paper
+- Practice pattern-wise (3–4 questions per pattern)
+- Focus on thinking, not just coding
