@@ -1,0 +1,268 @@
+========================================
+🔥 20-DAY DYNAMIC PROGRAMMING PLAN
+========================================
+
+DAY 1: RECURSION BASICS
+------------------------
+Learn:
+- What is recursion? ✅
+- Base case + recursive case✅
+
+Practice:
+- Fibonacci (recursive)✅
+- Print subsequences✅
+
+Revision:
+- Dry run recursion tree✅
+
+----------------------------------------
+
+DAY 2: INTRO TO DP
+------------------------
+Learn:
+- DP definition✅
+- Memoization vs Tabulation✅
+
+Practice:
+- Fibonacci (memoization + tabulation)✅
+
+Revision:
+- Compare all 3 approaches✅
+
+----------------------------------------
+
+DAY 3: 1D DP BASICS
+------------------------
+Learn:
+- dp[i] concept
+- State & transition
+
+Practice:
+- Climbing Stairs (LC 70)✅
+
+Revision:
+- Convert memo → tabulation✅
+
+----------------------------------------
+
+DAY 4: FROG JUMP PATTERN
+------------------------
+Learn:
+- Min cost problems
+
+Practice:
+- Frog Jump (GFG)
+- Min Cost Climbing Stairs (LC 746)
+
+Revision:
+- Space optimization
+
+----------------------------------------
+
+DAY 5: MULTIPLE CHOICE DP
+------------------------
+Learn:
+- Try all choices
+
+Practice:
+- House Robber (LC 198)
+
+Revision:
+- Identify pattern differences
+
+----------------------------------------
+
+DAY 6: ADVANCED 1D DP
+------------------------
+Practice:
+- House Robber II (LC 213)
+- Frog Jump with K steps
+
+Revision:
+- All 1D DP patterns
+
+----------------------------------------
+
+DAY 7: REVISION DAY 🧠
+------------------------
+Revise:
+- All 1D DP problems
+
+Do:
+- Solve without seeing code
+
+----------------------------------------
+
+DAY 8: SUBSEQUENCE DP
+------------------------
+Learn:
+- Take / Not Take pattern
+
+Practice:
+- Subset Sum (GFG)
+
+Revision:
+- Draw recursion tree
+
+----------------------------------------
+
+DAY 9: PARTITION PROBLEMS
+------------------------
+Practice:
+- Partition Equal Subset Sum (LC 416)
+
+Revision:
+- Convert recursion → DP
+
+----------------------------------------
+
+DAY 10: COUNT DP
+------------------------
+Practice:
+- Count Subsets with Sum K
+
+Revision:
+- Difference between count vs boolean DP
+
+----------------------------------------
+
+DAY 11: KNAPSACK (0/1)
+------------------------
+Learn:
+- Weight vs value
+
+Practice:
+- 0/1 Knapsack (GFG)
+
+Revision:
+- Table filling logic
+
+----------------------------------------
+
+DAY 12: UNBOUNDED KNAPSACK
+------------------------
+Practice:
+- Coin Change (LC 322)
+- Perfect Squares (LC 279)
+
+Revision:
+- Difference from 0/1
+
+----------------------------------------
+
+DAY 13: REVISION DAY 🔁
+------------------------
+Revise:
+- All subsequence + knapsack problems
+
+----------------------------------------
+
+DAY 14: DP ON STRINGS
+------------------------
+Learn:
+- 2D DP (i, j)
+
+Practice:
+- Longest Common Subsequence (LC 1143)
+
+Revision:
+- DP table visualization
+
+----------------------------------------
+
+DAY 15: STRING ADVANCED
+------------------------
+Practice:
+- Edit Distance (LC 72)
+- Longest Palindromic Subsequence
+
+Revision:
+- Pattern recognition
+
+----------------------------------------
+
+DAY 16: GRID DP
+------------------------
+Learn:
+- Movement problems
+
+Practice:
+- Unique Paths (LC 62)
+- Min Path Sum (LC 64)
+
+Revision:
+- Edge cases
+
+----------------------------------------
+
+DAY 17: GRID ADVANCED
+------------------------
+Practice:
+- Unique Paths II (LC 63)
+
+Revision:
+- Space optimization
+
+----------------------------------------
+
+DAY 18: STOCK DP
+------------------------
+Learn:
+- Buy/Sell logic
+
+Practice:
+- LC 121, LC 122
+
+Revision:
+- State transitions
+
+----------------------------------------
+
+DAY 19: PARTITION DP
+------------------------
+Practice:
+- Matrix Chain Multiplication
+- Palindrome Partitioning II (LC 132)
+
+Revision:
+- Try all partitions logic
+
+----------------------------------------
+
+DAY 20: FINAL REVISION 🚀
+------------------------
+Do:
+- Solve 8–10 mixed DP problems
+
+Focus:
+- Pattern recognition
+- Speed + confidence
+
+----------------------------------------
+
+🔥 DAILY STRUCTURE
+----------------------------------------
+- 1–2 hr learning
+- 2–3 problems solving
+- 30 min revision
+
+----------------------------------------
+
+🔥 INTERVIEW STRATEGY
+----------------------------------------
+Always say:
+1. Recursion
+2. Memoization
+3. Tabulation
+4. Space Optimization
+
+----------------------------------------
+
+🔥 FINAL GOAL
+----------------------------------------
+- Recognize pattern in < 1 min
+- Write code in < 10 min
+
+========================================
+END OF PLAN 💪
+========================================

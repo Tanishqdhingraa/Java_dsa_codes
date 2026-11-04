@@ -1,0 +1,223 @@
+===============================
+🔥 DYNAMIC PROGRAMMING ROADMAP
+===============================
+
+STEP 0: PREREQUISITES
+---------------------
+- Recursion (must be strong)
+- Backtracking basics
+- Time complexity understanding
+
+Practice:
+- Print subsequences
+- Fibonacci (recursion)
+
+----------------------------------------
+
+STEP 1: UNDERSTAND DP CORE IDEA
+----------------------------------------
+Theory:
+- DP = Optimization over recursion
+- Used when:
+  1. Overlapping subproblems
+  2. Optimal substructure
+
+Types:
+- Memoization (Top-Down)
+- Tabulation (Bottom-Up)
+
+Basic Question:
+- Fibonacci Number
+
+LeetCode:
+- 509. Fibonacci Number
+
+----------------------------------------
+
+STEP 2: 1D DP (BASICS)
+----------------------------------------
+Pattern:
+- dp[i] depends on previous states
+
+Theory:
+- Define state clearly
+- Transition from smaller problems
+
+Questions:
+1. Climbing Stairs (LC 70)
+2. Frog Jump (GFG)
+3. Min Cost Climbing Stairs (LC 746)
+
+Focus:
+- Memoization → Tabulation → Space Optimization
+
+----------------------------------------
+
+STEP 3: 1D DP WITH MULTIPLE CHOICES
+----------------------------------------
+Pattern:
+- Try all options → take min/max
+
+Theory:
+- Similar to "choice diagram"
+
+Questions:
+1. House Robber (LC 198)
+2. Maximum Sum of Non-Adjacent Elements
+3. Frog Jump with K steps
+
+----------------------------------------
+
+STEP 4: DP ON SUBSEQUENCES (IMPORTANT)
+----------------------------------------
+Pattern:
+- Take / Not Take
+
+Theory:
+- Very important pattern
+- Base of knapsack problems
+
+Questions:
+1. Subset Sum (GFG)
+2. Partition Equal Subset Sum (LC 416)
+3. Count Subsets with Sum K
+
+----------------------------------------
+
+STEP 5: KNAPSACK PATTERN
+----------------------------------------
+Pattern:
+- Pick or skip item
+
+Theory:
+- 0/1 Knapsack
+- Unbounded Knapsack
+
+Questions:
+1. 0/1 Knapsack (GFG)
+2. Coin Change (LC 322)
+3. Perfect Squares (LC 279)
+4. Rod Cutting
+
+----------------------------------------
+
+STEP 6: DP ON STRINGS
+----------------------------------------
+Pattern:
+- Compare characters
+
+Theory:
+- Work on indices (i, j)
+
+Questions:
+1. Longest Common Subsequence (LC 1143)
+2. Longest Palindromic Subsequence
+3. Edit Distance (LC 72)
+
+----------------------------------------
+
+STEP 7: DP ON GRIDS (2D DP)
+----------------------------------------
+Pattern:
+- Move in grid (right/down)
+
+Theory:
+- dp[i][j] depends on top/left
+
+Questions:
+1. Unique Paths (LC 62)
+2. Unique Paths II (LC 63)
+3. Minimum Path Sum (LC 64)
+
+----------------------------------------
+
+STEP 8: DP ON STOCKS
+----------------------------------------
+Pattern:
+- Buy/Sell decisions
+
+Theory:
+- State = day + buy/sell
+
+Questions:
+1. Best Time to Buy & Sell Stock I (LC 121)
+2. Stock II (LC 122)
+3. Stock with Cooldown (LC 309)
+
+----------------------------------------
+
+STEP 9: DP ON PARTITIONS
+----------------------------------------
+Pattern:
+- Divide array/string
+
+Theory:
+- Try all partitions
+
+Questions:
+1. Matrix Chain Multiplication
+2. Palindrome Partitioning II (LC 132)
+
+----------------------------------------
+
+STEP 10: DP WITH BITMASK (ADVANCED)
+----------------------------------------
+Pattern:
+- Use bits to represent state
+
+Questions:
+1. Traveling Salesman Problem
+2. LC 847 (Shortest Path Visiting All Nodes)
+
+----------------------------------------
+
+STEP 11: DP OPTIMIZATION
+----------------------------------------
+Learn:
+- Space optimization
+- Reduce 2D → 1D
+- Rolling arrays
+
+----------------------------------------
+
+🔥 FINAL INTERVIEW STRATEGY
+----------------------------------------
+Always follow:
+
+1. Recursion (Brute force)
+2. Memoization
+3. Tabulation
+4. Space Optimization
+
+----------------------------------------
+
+🔥 GOLDEN PATTERNS TO REMEMBER
+----------------------------------------
+1. Fibonacci Pattern
+2. Take / Not Take
+3. Unbounded Choice
+4. Grid Movement
+5. Partition DP
+
+----------------------------------------
+
+🔥 DAILY PRACTICE PLAN
+----------------------------------------
+- 2 Easy
+- 2 Medium
+- 1 Revision
+
+----------------------------------------
+
+🔥 PRO TIP
+----------------------------------------
+If you see:
+- "Minimum / Maximum"
+- "Count ways"
+- "Can we form?"
+
+👉 Think DP immediately
+
+===============================
+END OF ROADMAP 🚀
+===============================
