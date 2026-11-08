@@ -1,0 +1,84 @@
+// ================= BIT MANIPULATION CHEAT SHEET =================
+
+// 1. Swapping Two Numbers (without extra variable)
+num1 = num1 ^ num2;
+num2 = num1 ^ num2;
+num1 = num1 ^ num2;
+
+
+// 2. Check if i'th bit is SET or NOT
+if ((num & (1 << i)) != 0) {
+    System.out.println("SET");
+} else {
+    System.out.println("NOT SET");
+}
+
+
+// 3. Set the i'th bit
+num = num | (1 << i);
+
+
+// 4. Clear the i'th bit
+num = num & (~(1 << i));
+
+
+// 5. Toggle the i'th bit
+num = num ^ (1 << i);
+
+
+// 6. Remove the rightmost set bit
+num = num & (num - 1);
+
+
+// 7. Check if number is a power of 2
+if ((num & (num - 1)) == 0 && num != 0) {
+    System.out.println("Power of 2");
+} else {
+    System.out.println("Not a power of 2");
+}
+
+
+// 8. Check if number is odd or even
+if ((num & 1) == 1) {
+    System.out.println("Odd");
+} else {
+    System.out.println("Even");
+}
+
+
+// 9. Divide a number by 2
+num = num >> 1;
+
+
+// 10. Count number of set bits (C++ only)
+// int ans = __builtin_popcount(num);
+
+
+// 11. Count number of set bits (Works in all languages)
+int count = 0;
+while (num != 0) {
+    num = num & (num - 1);
+    count++;
+}
+return count;
+
+//12 Minimum Bit Flips to Convert Number
+int num = start ^ goal;
+        int count = 0;
+        for (int i = 0; i < 32; i++) { 
+            count += (num & 1); 
+            num = num >> 1;
+        }
+        return count;
+
+
+
+//13 Single Number - I
+int ans = 0;
+    for(int num:nums){
+        ans = ans ^ num;
+    }
+    return ans;
+    
+//20 print all subsets 
+ 
